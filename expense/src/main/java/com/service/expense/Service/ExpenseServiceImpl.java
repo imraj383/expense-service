@@ -29,7 +29,7 @@ public class ExpenseServiceImpl implements ExpenseService{
 
     @Override
     public List<Expense> getUserExpenses(String name) {
-        return expenseRepository.findByUserEmail(userEmail);
+        return expenseRepository.findByUserEmail(name);
     }
 
     @Override
